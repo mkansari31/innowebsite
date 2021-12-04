@@ -16,7 +16,18 @@ $(document).ready(function () {
             },
         },
         submitHandler: function (form)  {
-            $(form).submit();
+            var formData = new FormData(form);
+            $.ajax({
+                url: 'sendEmail.php',
+                data: formData,
+                type: 'POST',
+                contentType: false, 
+                processData: false,
+                success: function() {
+                    $("#sendMessage").show();
+                    $("#contact-form")[0].reset();
+                }
+            });
         }
     })
   })

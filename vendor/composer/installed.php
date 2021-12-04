@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '62594518a70fed9731870cad4116ec7aa2aba16f',
         'name' => 'dell/mentor',
         'dev' => true,
     ),
     'versions' => array(
         'dell/mentor' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '62594518a70fed9731870cad4116ec7aa2aba16f',
             'dev_requirement' => false,
         ),
         'ezyang/htmlpurifier' => array(
