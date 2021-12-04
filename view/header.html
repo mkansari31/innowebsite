@@ -54,7 +54,10 @@
         <ul>
           <li><a class="" href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="#popular-courses">Courses</a></li>
+          {% set page = getUrl() %}
+          {% if page == "index.php" %}
+            <li><a href="#popular-courses">Courses</a></li>
+          {% endif %}
           <li><a href="blog.php">Blog</a></li>
 
           
