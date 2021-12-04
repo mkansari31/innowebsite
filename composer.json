@@ -1,0 +1,15 @@
+{
+    "name": "dell/mentor",
+    "description": "Innovative Computer Academy Website",
+    "autoload": {
+        "psr-4": {
+            "Dell\\Mentor\\": "src/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "phpoffice/phpspreadsheet": "^1.18",
+        "phpmailer/phpmailer": "^6.5",
+        "phpstan/phpstan": "^0.12.99"
+    }
+}
