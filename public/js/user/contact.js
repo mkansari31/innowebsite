@@ -1,11 +1,9 @@
 $(document).ready(function () {
-
-
-    $("#contact").validate({
+    $("#contact-form").validate({
         rules: {
             name: {
                 required: true,
-
+  
             },
             email: {
                 required: true,
@@ -17,9 +15,8 @@ $(document).ready(function () {
                 required: true,
             },
         },
-        submitHandler: function ()  {
-
+        submitHandler: function (form)  {
+            $(form).submit();
         }
-        
     })
-})
+  })
