@@ -25,7 +25,7 @@ $(document).ready(function () {
                 processData: false,
                 success: function(res) {
                     if (res == true) {
-                        $('.sent-message h2').show();
+                        $('.sent-message').show();
                         $("#contact-form")[0].reset();
                         setTimeout(function() {
                             $('#send-message').fadeOut('fast');

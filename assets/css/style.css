@@ -1363,9 +1363,10 @@ section {
   text-decoration: none;
 }
 
-.sent-message h2{
+.sent-message {
 	display: none;
 	color: #fff;
 	background:#18d26e;
 	padding: 10px;
+  font-weight: 600;
 }
