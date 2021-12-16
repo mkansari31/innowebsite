@@ -16,8 +16,8 @@ try {
     $mail->isSMTP(true);
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'azharsheikh760@gmail.com';
-    $mail->Password   = 'Azhar@123';
+    $mail->Username   = 'innovative.academy01@gmail.com';
+    $mail->Password   = 'Ica3131##';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
@@ -34,7 +34,8 @@ try {
     $mail->Body    .= "User Email: ".$_POST['email']."<br>";
     $mail->Body    .= "User Message: ".$_POST['message']."<br>";
     $mail->send();
-
+    echo true;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+?>

@@ -23,9 +23,14 @@ $(document).ready(function () {
                 type: 'POST',
                 contentType: false, 
                 processData: false,
-                success: function() {
-                    $("#sendMessage").show();
-                    $("#contact-form")[0].reset();
+                success: function(res) {
+                    if (res == true) {
+                        $('.sent-message h2').show();
+                        $("#contact-form")[0].reset();
+                        setTimeout(function() {
+                            $('#send-message').fadeOut('fast');
+                        },5000);
+                    }
                 }
             });
         }

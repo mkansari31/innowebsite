@@ -561,7 +561,7 @@ section {
 }
 .why-us .content h3 {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .why-us .content p {
@@ -1361,4 +1361,11 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+
+.sent-message h2{
+	display: none;
+	color: #fff;
+	background:#18d26e;
+	padding: 10px;
 }
