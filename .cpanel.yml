@@ -1,5 +1,11 @@
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/var/home/icaeduca/public_html/
- - /bin/cp * $DEPLOYPATH
+    tasks:
+		- export DEPLOYPATH=/var/home/icaeduca/public_html/
+		- /bin/cp -R assets $DEPLOYPATH
+		- /bin/cp -R src $DEPLOYPATH
+		- /bin/cp -R forms $DEPLOYPATH
+		- /bin/cp -R public $DEPLOYPATH
+		- /bin/cp -R twig $DEPLOYPATH
+		- /bin/cp -R vendor $DEPLOYPATH
+		- /bin/cp -R view $DEPLOYPATH
